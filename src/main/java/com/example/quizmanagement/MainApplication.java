@@ -5,13 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 import java.io.IOException;
 
 public class MainApplication extends Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 		FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
-		Scene scene = new Scene(fxmlLoader.load(), 520, 340);
+		//stage.initStyle(StageStyle.UNDECORATED);
+		Scene scene = new Scene(fxmlLoader.load(), 520, 400);
 		stage.setTitle("Online java quiz management system");
 		stage.setScene(scene);
 		stage.show();
